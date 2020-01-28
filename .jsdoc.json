@@ -1,0 +1,12 @@
+{
+    "source": {
+        "includePattern": ".+\\.js(doc|x)?$",
+        "include": ["."],
+        "exclude": ["node_modules", "dist"]
+    },
+    "opts": {
+        "destination": "./docs/",
+        "template": "node_modules/toast-jsdoc",
+        "recurse": true
+    }
+}

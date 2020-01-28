@@ -1,0 +1,25 @@
+{
+  "presets": [
+    "@babel/env"
+  ],
+  "plugins": [
+    ["@babel/plugin-transform-modules-commonjs"],
+    [
+      "module-resolver",
+      {
+        "alias": {
+          "@src": "./src"
+        },
+        "extensions": [
+          ".js"
+        ]
+      }
+    ],
+    ["@babel/plugin-proposal-decorators", { "legacy": true }],
+    ["@babel/plugin-proposal-class-properties", { "loose": true }],
+    ["@babel/plugin-syntax-dynamic-import"],
+    ["@babel/plugin-transform-destructuring"],
+    ["@babel/plugin-transform-runtime"],
+    ["@babel/plugin-syntax-export-default-from"]
+  ]
+}
